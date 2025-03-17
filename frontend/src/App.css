@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Self-defined css */
+
+.light-theme {
+  background-color: #fff; /* Light background */
+  color: #000; /* Dark text */
+}
+
+.dark-theme {
+  background-color: #000; /* Dark background */
+  color: #fff; /* Light text */
+}
+
+.court-theme {
+  background-color: #0000ff; /* Dark background */
+  color: #ffff00; /* Light text */
+}
+
+.scrollable-container {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.flex-container {
+  display: flex;
+  /* Align items starting from the top left */
+  align-items: flex-start;
+}
+
+.flex-item {
+  /* Styles for your items */
+  margin: 5px; /* Adjust margin as needed */
+  margin-right: 20px;
+}
+
+.customSelect, .customInput, .customButton {
+  font-size: 16px; /* Default font size */
+  line-height: 20px;
+}
+
+.customInput {
+  width: 32px; /* Default width */
+}
+
+
+.separator {
+  border-bottom: 1px solid #ccc; /* Separator line */
+  margin-bottom: 10px;
+}
+
+.strings-container {
+  border: 0px solid #ccc;
+  padding: 10px;
+  line-height: 1.5;
+  overflow-Y: auto;
+  max-height: 80vh;
+}
+
+.string-item {
+  margin: -10px 0;
+  padding: 5px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
