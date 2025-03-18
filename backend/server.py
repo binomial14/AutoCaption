@@ -15,14 +15,14 @@ isMicOccupied = False
 async def start_client(c_id,config):
     global isMicOccupied
     isMicOccupied = True
-    await sio.emit('mic_status',{"occupied": isMicOccupied})
+    sio.emit('mic_status',{"occupied": isMicOccupied})
     await SystemWrapper.start_client(c_id,sio,config)
 
 @sio.on('stopClient')
 async def stop_client(c_id):
     global isMicOccupied
     isMicOccupied = False
-    await sio.emit('mic_status',{"occupied": isMicOccupied})
+    sio.emit('mic_status',{"occupied": isMicOccupied})
     await SystemWrapper.stop_client(c_id)
     
     
