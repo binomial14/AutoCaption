@@ -37,7 +37,7 @@ protobuf==4.23.4
 pyasn1==0.5.0
 pyasn1-modules==0.3.0
 pydantic==1.10.11
-python-engineio==4.3.2
+python-engineio==4.11.2
 python-socketio==5.12.1
 PyYAML==6.0
 requests==2.31.0
