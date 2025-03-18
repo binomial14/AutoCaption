@@ -1,8 +1,6 @@
 import socketio
 from aiohttp import web
 
-import ssl
-
 from datetime import datetime
 
 from SystemWrapper import SystemWrapper
@@ -32,7 +30,4 @@ async def stop_client(c_id):
 async def receive_audio(c_id, audio_data):
     SystemWrapper.receive_audio_data(c_id, audio_data)
 
-# web.run_app(app, host='0.0.0.0', port=10000)
-ssl_context = ssl.create_default_context(ssl.Purpose.CLIENT_AUTH)
-ssl_context.load_cert_chain('../cert.pem', '../key.pem')
-web.run_app(app, host='0.0.0.0', port=10000, ssl_context=ssl_context)
+web.run_app(app, host='0.0.0.0', port=10000)
