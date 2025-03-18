@@ -1,5 +1,3 @@
-import io from 'socket.io-client';
-
 const mediaConstraints = {
     audio: true,
     video: false
