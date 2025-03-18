@@ -1,3 +1,16 @@
+import os
+import json
+
+# Load Google credentials from environment variable
+credentials_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
+
+if credentials_json:
+    credentials_path = "/tmp/google_credentials.json"
+    with open(credentials_path, "w") as f:
+        f.write(credentials_json)
+    
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = credentials_path
+
 from google.cloud import speech
 
 from utils import get_current_time
