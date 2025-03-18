@@ -1,8 +1,5 @@
-import asyncio
-import ssl
 import socketio
 from aiohttp import web
-import ssl
 
 from datetime import datetime
 
