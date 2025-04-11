@@ -16,7 +16,7 @@ function App() {
 
   const [settingsConfig, setSettingsConfig] = useState({
     layoutTheme: "dark-theme",
-    fontSize: 72,
+    fontSize: 48,
     fontFamily: "Arial",
     model: "latest_long"
   });
