@@ -41,7 +41,7 @@ const Settings = ({ settingsConfig, updateSettings}) => {
               <label>
               Model:{' '}
               <select value={settingsConfig.model} onChange={(e) => updateSettings("model",e.target.value)} className='customSelect'>
-                  <option value="latest_long">Default</option>
+                  <option value="latest_long">Education</option>
                   <option value="medical_conversation">Medical Conversation</option>
               </select>
               </label>
